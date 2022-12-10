@@ -1,0 +1,7 @@
+@import "resets/_normalize.css";
+@import "resets/_reset.css";
+@import "resets/_typography.css";
+
+html, body {
+  background-color: #000;
+}
