@@ -9,13 +9,91 @@
 </head>
 <body>
   <div id="main">
-    <div id="menu"></div>
+    <div id="menu" class="box radius view">
+      <h1>JOGO DA MEMÓRIA</h1>
+      <div class="select-level">
+        <label for="level_select_4">
+          <input type="radio" name="level_select" id="level_select_4" value="4">
+          Fácil
+        </label>
+        <label for="level_select_6">
+          <input type="radio" name="level_select" id="level_select_6" value="6">
+          Normal
+        </label>
+        <label for="level_select_8">
+          <input type="radio" name="level_select" id="level_select_8" value="8">
+          Difícil
+        </label>
+        <label for="level_select_16">
+          <input type="radio" name="level_select" id="level_select_16" value="16">
+          Eita!
+        </label>
+      </div>
+      <div class="buttons">
+        <button class="btn radius" id="btn_start">INICIAR</button>
+      </div>
+    </div>
 
-    <div id="board"></div>
+    <div class="view" id="board">
+      <div id="status_bar">
+        <div class="status-bar__title">
+          Nível: 
+          <div id="level">Fácil</div>
+        </div>
+        <div class="status-bar__title">
+          Tempo: 
+          <div id="time">00:00</div>
+        </div>
+        <div class="status-bar__title">
+          Pontos: 
+          <div id="pontuation">0000</div>
+        </div>
+      </div>
 
-    <div id="gameover"></div>
+      <div id="cards"></div>
+
+      <div id="menu_bar">
+        <div class="menu-bar__btn">
+          <img src="./images/btn-exit.png" id="btn_home" alt="Sair" />
+        </div>
+        <div class="menu-bar__btn">
+          <img src="./images/btn-audio.png" id="btn_mute" alt="Mute" />
+          <img src="./images/btn-pause.png" id="btn_pause" alt="Play/Pause" />
+        </div>
+      </div>
+    </div>
+
+    <div id="gameover" class="box radius view">
+      <h1>FIM DE JOGO!</h1>
+      <div id="score" class="radius">
+        <div id="score__label">
+          <img src="./images/medal.png" alt="Score Icon"> PONTUAÇÃO
+        </div>
+        <div class="score__points">Máxima: <span id="scoreMax">0</span></div>
+        <div class="score__points">Atual: <span id="scoreCurrent">12500</span></div>
+      </div>
+      <div id="newRecord">
+        <img src="./images/trophy.png" alt="New Record">
+        <label>
+          <input type="text" class="radius" id="" placeholder="Digite seu nome">
+          <button class="btn radius">OK</button>
+        </label>
+      </div>
+      <div class="buttons">
+        <button class="btn radius" id="btn_restart">JOGAR NOVAMENTE</button>
+        <button class="btn radius" id="btn_exit">SAIR</button>
+      </div>
+    </div>
+
+    <div id="credits">
+      <h1>Créditos</h1>
+      <div class="attribution-block">
+        <a href="http://dig.ccmixter.org/files/djlang59/62747">A Little Ditty on the Dance Floor</a> by J.Lang (c) copyright 2020 Licensed under a Creative Commons <a href="http://creativecommons.org/licenses/by-nc/3.0/">Attribution Noncommercial  (3.0)</a> license. Ft: Septahelix
+      </div>
+    </div>
   </div>
 
+  <script src="js/Timer.js"></script>
   <script src="js/index.js"></script>
 </body>
 </html>
