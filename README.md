@@ -6,6 +6,8 @@ Este é um jogo da memória simples criado em javascript vanilla com o objetivo 
 
 Para jogar, basta clicar nas cartas para virá-las e tentar encontrar todos os pares. Quando um par é encontrado, as cartas desaparecem do jogo. O jogo termina quando todos os pares são encontrados.
 
+[Clique aqui para jogar](https://7i4g0.github.io/jogo-da-memoria-js)
+
 ## Como utilizar o código
 
 Para utilizar o código, basta clonar o repositório e abrir o arquivo index.html em um navegador. Você pode então ver o jogo em ação e modificar o código para criar sua própria versão do jogo.
