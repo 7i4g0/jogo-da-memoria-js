@@ -8,6 +8,8 @@ Este é um jogo da memória simples criado em JavaScript vanilla, perfeito para 
 
 2) Encontre todos os pares para vencer o jogo.
 
+[Clique aqui para jogar](https://7i4g0.github.io/jogo-da-memoria-js)
+
 ## Tecnologias utilizadas
 
 - **HTML5:** Estrutura básica da página.
